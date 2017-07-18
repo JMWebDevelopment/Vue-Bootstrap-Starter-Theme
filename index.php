@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="row">
+    <div id="app"></div>
 
     <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
@@ -10,7 +10,5 @@
             </div>
         <?php endwhile; ?>
     <?php endif; ?>
-
-</div>
 
 <?php get_footer(); ?>

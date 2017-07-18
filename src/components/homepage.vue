@@ -1,8 +1,8 @@
 <template>
-    <div id="homepage" class="row">
-        <div class="list-posts large-12 columns">
-            <div v-for="post in posts" :key="post.id" v-bind:post="post">
-                <div class="preview-post">
+    <div id="homepage">
+        <div class="list-posts container">
+            <div v-for="post in posts" :key="post.id" v-bind:post="post" class="row">
+                <div class="preview-post col-12">
                     <router-link :to="{ name:'post', params: {postSlug: post.slug} }">
                         <h2 class="post-title title is-3" v-html="post.title.rendered"></h2>
                         <p class="post-excerpt" v-html="post.excerpt.rendered"></p>
@@ -11,10 +11,10 @@
                 </div>
             </div>
             <div class="pagination row">
-                <div v-if="page > 1" class="newer-posts large-6 medium-6 small-6 columns">
+                <div v-if="page > 1" class="newer-posts col-lg-6 col-md-6 col-sm-6 columns">
                     <router-link :to="{ name: 'Homepage', query: { page: this.page - 1 }}" class="pagination-previous button" v-on:click.native="previousClick">Previous</router-link>
                 </div>
-                <div v-if="page < totalPages" class="newer-posts large-6 medium-6 small-6 columns">
+                <div v-if="page < totalPages" class="newer-posts col-lg-6 col-md-6 col-sm-6 columns">
                     <router-link :to="{ name: 'Homepage', query: { page: this.page + 1 }}" class="pagination-next button" v-on:click.native="nextClick">Next</router-link>
                 </div>
             </div>
