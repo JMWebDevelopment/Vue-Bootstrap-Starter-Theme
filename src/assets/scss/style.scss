@@ -1,0 +1,42 @@
+/*
+Theme Name: {Theme Name}
+Theme URI: http://www.jacobmartella.com/wordpress/wordpress-theme/{theme-slug}-wordpress-theme
+Description:
+Author: Jacob Martella
+Author URI: http://www.jacobmartella.com/
+Version: 1.0
+License: GNU General Public License & MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Theme Slug: theme-slug
+*/
+/**
+* Table of Contents
+* I. Global Styles
+*   A. Foundation Defaults
+*   B. Theme Defaults
+*   C. WordPress Classes
+* II. Header
+* III. Home
+* IV. Single
+* V. Comments
+* VI. Index
+* VII. Author
+* VIII. Pages
+*   A. 404
+* IX. Sidebar
+* 	A. Widgets
+* X. Footer
+*
+* NOTE: Theme specific styles begin on line ---.
+*/
+body {
+  background-color: #ffffff;
+}
+/**
+***************** I. Global Styles ************************
+*/
+/**
+***************** A. Bootstrap Defaults ************************
+*/
+@import "bootstrap";
