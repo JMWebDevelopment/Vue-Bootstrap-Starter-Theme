@@ -40,3 +40,62 @@ body {
 ***************** A. Bootstrap Defaults ************************
 */
 @import "bootstrap";
+
+// Import your custom styles
+@import "main";
+
+// Import your retina/HD sty;es
+@import "2x";
+
+// Import your print styles
+@import "print";
+
+/**
+***************** B. Theme Defaults ************************
+*/
+@import "default";
+
+/**
+***************** C. WordPress Classes ************************
+*/
+@import "wordpress";
+
+/**
+***************** II. Header ************************
+*/
+@import "header";
+
+/**
+***************** III. Home ************************
+*/
+@import "home";
+
+/**
+***************** IV. Single ************************
+*/
+@import "single";
+
+/**
+***************** V. Comments ************************
+*/
+@import "comments";
+
+/**
+***************** VI. Index ************************
+*/
+@import "index";
+
+/**
+***************** VIII. Pages ************************
+*/
+@import "page";
+
+/**
+***************** IX. Sidebars ************************
+*/
+@import "sidebar";
+
+/**
+***************** X. Footer ************************
+*/
+@import "footer";
