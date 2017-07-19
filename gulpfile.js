@@ -49,7 +49,7 @@ gulp.task('site-js', function() {
     .pipe(gulp.dest('./assets/js'))
 });    
 
-// JSHint, concat, and minify Foundation JavaScript
+// JSHint, concat, and minify Bootstrap JavaScript
 gulp.task('bootstrap-js', function() {
   return gulp.src([	
   		  
@@ -70,7 +70,23 @@ gulp.task('bootstrap-js', function() {
     .pipe(gulp.dest('./src/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('./src//assets/js'))
+    .pipe(gulp.dest('./src/assets/js'))
+});
+
+// JSHint, concat, and minify Bootstrap JavaScript
+gulp.task('tether-js', function() {
+    return gulp.src([
+
+        // Foundation core - needed if you want to use any of the components below
+        './bower_components/tether/src/js/abutment.js',
+        './bower_components/tether/src/js/constraint.js',
+        './bower_components/tether/src/js/markAttachment.js',
+        './bower_components/tether/src/js/shift.js',
+        './bower_components/tether/src/js/tether.js',
+        './bower_components/tether/src/js/utils.js'
+    ])
+        .pipe(concat('tether.js'))
+        .pipe(gulp.dest('./src/assets/js'))
 });
 
 // Update Foundation with Bower and save to /vendor

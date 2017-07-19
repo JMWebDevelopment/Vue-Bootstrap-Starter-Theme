@@ -37,8 +37,11 @@ function theme_slug_scripts() {
         $user = '';
     }
 
-    // Adding Foundation scripts file in the footer
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/src/assets/js/bootstrap.js', array( 'jquery' ), '6.0', true );
+    wp_enqueue_script( 'jQuery' );
+
+    // Adding Bootstrap scripts file in the footer
+    wp_enqueue_script( 'tether-js', get_template_directory_uri() . '/bower_components/tether/dist/js/tether.js', array( 'jquery' ), '6.0' );
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', array( 'jquery' ) );
 
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/dist/build.js', array( 'jquery' ), '', true );
