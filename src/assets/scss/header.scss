@@ -13,29 +13,18 @@ $black: #000000;
 ***************** A. Top Menu ************************ 
 */
 .header {
-	.top-bar {
-		.menu-icon {
-			border: 0px;
-			background-color: transparent;
-			&:hover {
-				background-color: transparent;
+	.top-nav {
+		background-color: #efefef;
+		.nav {
+			.nav-item {
+				height: auto;
+				width: auto;
+				display: block;
+				margin-left: 0;
+				a {
+					padding: 15px 2%;
+				}
 			}
 		}
 	}
 }
-/**
-***************** B. Header ************************ 
-*/
-.site-title a:link, .site-title a:visited {
-	font-family: Georgia;
-	font-size: 28px;
-	color: $black;
-}
-.site-description a:link, .site-description a:visited {
-	font-family: Georgia;
-	font-size: 22px;
-	color: $black;
-}
-/**
-***************** C. Main Menu ************************ 
-*/

@@ -21,6 +21,7 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
                 $classes = empty( $item->classes ) ? array() : (array) $item->classes;
                 $classes[] = ($args->has_children) ? 'dropdown' : '';
                 $classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
+                $classes[] = 'nav-item';
                 $classes[] = 'menu-item-' . $item->ID;
 
                 $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
@@ -33,6 +34,7 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
                 $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
                 $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
                 $attributes .= ($args->has_children) 	    ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
+                $attributes .= ' nav-link';
                 $item_output = $args->before;
                 $item_output .= '<a'. $attributes .'>';
                 $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;

@@ -49,25 +49,12 @@ CSS3 GRADIENTS.
 /**
 ***************** A. Top Menu ************************ 
 */
-.header .top-bar .menu-icon {
-  border: 0px;
-  background-color: transparent; }
-  .header .top-bar .menu-icon:hover {
-    background-color: transparent; }
-
-/**
-***************** B. Header ************************ 
-*/
-.site-title a:link, .site-title a:visited {
-  font-family: Georgia;
-  font-size: 28px;
-  color: #000000; }
-
-.site-description a:link, .site-description a:visited {
-  font-family: Georgia;
-  font-size: 22px;
-  color: #000000; }
-
-/**
-***************** C. Main Menu ************************ 
-*/
+.header .top-nav {
+  background-color: #efefef; }
+  .header .top-nav .nav .nav-item {
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: 0; }
+    .header .top-nav .nav .nav-item a {
+      padding: 15px 2%; }
