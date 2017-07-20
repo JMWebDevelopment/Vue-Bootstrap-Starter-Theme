@@ -6855,7 +6855,17 @@ CSS3 GRADIENTS.
 ***************** A. Top Menu ************************ 
 */
 .header .top-nav {
-  background-color: #efefef; }
+  background-color: #efefef;
+  padding: 0; }
+  .header .top-nav .nav .nav-item {
+    margin-left: 0;
+    display: inline-block; }
+    .header .top-nav .nav .nav-item a {
+      display: inline-block;
+      padding: 10px 10% 10px 10%;
+      box-sizing: initial; }
+      .header .top-nav .nav .nav-item a.dropdown-toggle::after {
+        margin-left: 0em !important; }
 
 /**
 ***************** III. Home ************************

@@ -15,9 +15,21 @@ $black: #000000;
 .header {
 	.top-nav {
 		background-color: #efefef;
+		padding: 0;
 		.nav {
 			.nav-item {
 				margin-left: 0;
+				display: inline-block;
+				a {
+					display: inline-block;
+					padding: 10px 10% 10px 10%;
+					box-sizing: initial;
+					&.dropdown-toggle {
+						&::after {
+							margin-left: 0em !important;
+						}
+					}
+				}
 			}
 		}
 	}
