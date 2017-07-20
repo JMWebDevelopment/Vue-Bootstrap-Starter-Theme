@@ -13,9 +13,25 @@
 
     <header class="header">
 
-        <div class="top-nav hidden-md-down nav-bar" id="main-menu">
-            <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
-        </div>
+        <nav class="navbar navbar-light navbar-toggleable-sm top-nav hidden-md-down">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="navbar-header">
+                    <?php
+                    wp_nav_menu( array(
+                            'menu'              => 'Testing Menu',
+                            'theme_location'    => 'bootstrap4wp',
+                            'depth'             => 2,
+                            'container'         => '',
+                            'container_class'   => '',
+                            'container_id'      => '',
+                            'menu_class'        => 'nav navbar-nav',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker'            => new Bootstrap_Walker_Nav_Menu())
+                    );
+                    ?>
+                </div>
+        </nav>
 
         <div class="container">
             <div class="row">
