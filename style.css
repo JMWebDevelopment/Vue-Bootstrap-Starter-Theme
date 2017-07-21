@@ -6887,6 +6887,39 @@ CSS3 GRADIENTS.
           width: 100%;
           box-sizing: border-box; }
 
+.header .main-nav {
+  background-color: #efefef;
+  padding: 0; }
+  .header .main-nav .nav .nav-item {
+    margin-left: 0;
+    display: inline-block;
+    text-align: center; }
+    .header .main-nav .nav .nav-item a {
+      display: inline-block;
+      padding: 10px 10% 10px 10%;
+      box-sizing: initial;
+      white-space: nowrap; }
+      .header .main-nav .nav .nav-item a.dropdown-toggle::after {
+        display: none; }
+      .header .main-nav .nav .nav-item a:hover {
+        background-color: #252525;
+        color: #fefefe; }
+    .header .main-nav .nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block; }
+      .header .main-nav .nav .nav-item.dropdown:hover .dropdown-menu:hover {
+        display: block; }
+    .header .main-nav .nav .nav-item ul {
+      padding: 0;
+      top: 95%; }
+      .header .main-nav .nav .nav-item ul li {
+        text-align: left;
+        display: block;
+        width: 100%; }
+        .header .main-nav .nav .nav-item ul li a {
+          white-space: normal;
+          width: 100%;
+          box-sizing: border-box; }
+
 /**
 ***************** III. Home ************************
 */
@@ -7265,9 +7298,10 @@ CSS3 GRADIENTS.
   background-color: #252525;
   color: #ffffff;
   text-align: center; }
-
-.footer a, .footer a:link, .footer a:visited {
-  color: #ffffff; }
-
-.footer a:hover {
-  color: #000000; }
+  .footer .row {
+    margin: 0 auto;
+    text-align: center; }
+    .footer .row a {
+      color: #ffffff; }
+      .footer .row a:hover {
+        color: #000000; }

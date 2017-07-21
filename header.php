@@ -20,8 +20,7 @@
                     <?php
                     wp_nav_menu( array(
                             'menu'              => 'Testing Menu',
-                            'theme_location'    => 'bootstrap4wp',
-                            'depth'             => 2,
+                            'theme_location'    => 'top-nav',
                             'container'         => '',
                             'container_class'   => '',
                             'container_id'      => '',
@@ -45,6 +44,25 @@
                 </div>
             </div>
         </div>
+
+        <nav class="navbar navbar-light navbar-toggleable-sm main-nav hidden-md-down">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="navbar-header">
+                    <?php
+                    wp_nav_menu( array(
+                            'menu'              => 'Testing Menu',
+                            'theme_location'    => 'main-nav',
+                            'container'         => '',
+                            'container_class'   => '',
+                            'container_id'      => '',
+                            'menu_class'        => 'nav navbar-nav',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker'            => new Bootstrap_Walker_Nav_Menu())
+                    );
+                    ?>
+                </div>
+        </nav>
 
         <nav class="navbar mobile-nav hidden-lg-up" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->

@@ -50,9 +50,10 @@ CSS3 GRADIENTS.
   background-color: #252525;
   color: #ffffff;
   text-align: center; }
-
-.footer a, .footer a:link, .footer a:visited {
-  color: #ffffff; }
-
-.footer a:hover {
-  color: #000000; }
+  .footer .row {
+    margin: 0 auto;
+    text-align: center; }
+    .footer .row a {
+      color: #ffffff; }
+      .footer .row a:hover {
+        color: #000000; }

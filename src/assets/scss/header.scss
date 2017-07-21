@@ -63,4 +63,54 @@ $black: #000000;
 			}
 		}
 	}
+	.main-nav {
+		background-color: #efefef;
+		padding: 0;
+		.nav {
+			.nav-item {
+				margin-left: 0;
+				display: inline-block;
+				text-align: center;
+				a {
+					display: inline-block;
+					padding: 10px 10% 10px 10%;
+					box-sizing: initial;
+					white-space: nowrap;
+					&.dropdown-toggle {
+						&::after {
+							display: none;
+						}
+					}
+					&:hover {
+						background-color: #252525;
+						color: #fefefe;
+					}
+				}
+				&.dropdown {
+					&:hover {
+						.dropdown-menu {
+							display: block;
+							&:hover {
+								display: block;
+							}
+						}
+					}
+				}
+				ul {
+					padding: 0;
+					top: 95%;
+					li {
+						text-align: left;
+						display: block;
+						width: 100%;
+						a {
+							white-space: normal;
+							width: 100%;
+							box-sizing: border-box;
+						}
+					}
+				}
+			}
+		}
+	}
 }

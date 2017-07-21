@@ -15,12 +15,14 @@ $color: #ffffff;
 	background-color: $background_color;
 	color: $color;
 	text-align: center;
-}
-
-.footer a, .footer a:link, .footer a:visited {
-	color: $color;
-}
-
-.footer a:hover {
-	color: #000000;
+	.row {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: $color;
+			&:hover {
+				color: #000000;
+			}
+		}
+	}
 }
