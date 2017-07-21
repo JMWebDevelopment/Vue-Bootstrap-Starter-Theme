@@ -54,10 +54,30 @@ CSS3 GRADIENTS.
   padding: 0; }
   .header .top-nav .nav .nav-item {
     margin-left: 0;
-    display: inline-block; }
+    display: inline-block;
+    text-align: center; }
     .header .top-nav .nav .nav-item a {
       display: inline-block;
       padding: 10px 10% 10px 10%;
-      box-sizing: initial; }
+      box-sizing: initial;
+      white-space: nowrap; }
       .header .top-nav .nav .nav-item a.dropdown-toggle::after {
-        margin-left: 0em !important; }
+        display: none; }
+      .header .top-nav .nav .nav-item a:hover {
+        background-color: #252525;
+        color: #fefefe; }
+    .header .top-nav .nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block; }
+      .header .top-nav .nav .nav-item.dropdown:hover .dropdown-menu:hover {
+        display: block; }
+    .header .top-nav .nav .nav-item ul {
+      padding: 0;
+      top: 95%; }
+      .header .top-nav .nav .nav-item ul li {
+        text-align: left;
+        display: block;
+        width: 100%; }
+        .header .top-nav .nav .nav-item ul li a {
+          white-space: normal;
+          width: 100%;
+          box-sizing: border-box; }

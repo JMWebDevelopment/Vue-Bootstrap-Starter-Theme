@@ -104,6 +104,6 @@ gulp.task('default', function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('./assets/scss/**/*.scss', ['styles']);
+  gulp.watch('./src/assets/scss/**/*.scss', ['styles']);
 
 });
