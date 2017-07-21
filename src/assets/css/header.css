@@ -58,14 +58,15 @@ CSS3 GRADIENTS.
     text-align: center; }
     .header .top-nav .nav .nav-item a {
       display: inline-block;
-      padding: 10px 10% 10px 10%;
+      padding: 10px 1em 10px 1em;
       box-sizing: initial;
       white-space: nowrap; }
       .header .top-nav .nav .nav-item a.dropdown-toggle::after {
         display: none; }
       .header .top-nav .nav .nav-item a:hover {
         background-color: #252525;
-        color: #fefefe; }
+        color: #fefefe;
+        cursor: pointer; }
     .header .top-nav .nav .nav-item.dropdown:hover .dropdown-menu {
       display: block; }
       .header .top-nav .nav .nav-item.dropdown:hover .dropdown-menu:hover {
@@ -82,6 +83,16 @@ CSS3 GRADIENTS.
           width: 100%;
           box-sizing: border-box; }
 
+.header .masthead .site-title {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  margin-bottom: 15px; }
+
+.header .masthead .site-description {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  margin-bottom: 10px; }
+
 .header .main-nav {
   background-color: #efefef;
   padding: 0; }
@@ -91,14 +102,15 @@ CSS3 GRADIENTS.
     text-align: center; }
     .header .main-nav .nav .nav-item a {
       display: inline-block;
-      padding: 10px 10% 10px 10%;
+      padding: 10px 1em 10px 1em;
       box-sizing: initial;
       white-space: nowrap; }
       .header .main-nav .nav .nav-item a.dropdown-toggle::after {
         display: none; }
       .header .main-nav .nav .nav-item a:hover {
         background-color: #252525;
-        color: #fefefe; }
+        color: #fefefe;
+        cursor: pointer; }
     .header .main-nav .nav .nav-item.dropdown:hover .dropdown-menu {
       display: block; }
       .header .main-nav .nav .nav-item.dropdown:hover .dropdown-menu:hover {

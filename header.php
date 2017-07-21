@@ -19,7 +19,6 @@
                 <div class="collapse navbar-collapse" id="navbar-header">
                     <?php
                     wp_nav_menu( array(
-                            'menu'              => 'Testing Menu',
                             'theme_location'    => 'top-nav',
                             'container'         => '',
                             'container_class'   => '',
@@ -51,7 +50,6 @@
                 <div class="collapse navbar-collapse" id="navbar-header">
                     <?php
                     wp_nav_menu( array(
-                            'menu'              => 'Testing Menu',
                             'theme_location'    => 'main-nav',
                             'container'         => '',
                             'container_class'   => '',
